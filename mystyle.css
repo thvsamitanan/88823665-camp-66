@@ -1,37 +1,17 @@
-h1 {
-  font-size: 40px;
-  font-family: "Mali", cursive;
-  font-weight: 700;
+.row.mb-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.row.mb-3.form-box {
+    display: flex;
+    justify-content: left;
+    align-items: left;
 
-body { 
-  font-size: 17px;
-  font-family: "Mali", cursive;
-  width: 650px; 
-  height: 650px; 
-  border: 3px solid whitesmoke; 
-  border-radius: 12px; 
-  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.2); 
-  background: linear-gradient(-45deg, #E0FAF4, #9BD3FA, #9FFCA7, #9BFAE4, #9BF1FA, #9BFAC3); 
-  background-size: 300% 300%;
-  margin: 20px auto;
-  transition: background 0.3s ease;
 }
-
-body:hover {
-  animation: gradient-animation 4s infinite; 
+.btn-secondary {
+    margin-left: 280px;
 }
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-input:focus, textarea:focus {
-  border-color: #A89BFA; 
+.btn-success {
+    margin-left: 1000px;
 }
