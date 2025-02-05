@@ -23,14 +23,14 @@ Route::get('/',
 Route::post('/register',
     [RegisterController::class, 'create']);
 
-Route::get('/users',
+Route::get('/user',
  [UserController::class, 'index']);
 Route::get('/user/{id}',
  [UserController::class, 'edit']);
 Route::put('/user',
  [UserController::class, 'edit_action']);
 Route::delete('/user',
- [UserController::class, 'edit_action']);
+ [UserController::class, 'delete']);
 
 
 Route::get('/mycontroller/{id?}',

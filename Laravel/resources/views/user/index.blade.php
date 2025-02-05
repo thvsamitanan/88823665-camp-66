@@ -28,7 +28,7 @@
                                         <a href="{{ url('/user/' . $user->id) }}" class="btn btn-warning btn-sm" data-toggle="tooltip" title="Edit">
                                             Edit
                                         </a>
-                                        <form action="/user" method="post" style="display: inline;" class="d-inline-block">
+                                        <form action="{{url('/user')}}" method="post" style="display: inline;" class="d-inline-block">
                                             @csrf
                                             @method('delete')
                                             <input type="hidden" name="id" value="{{ $user->id }}">
