@@ -12,6 +12,9 @@ class UserController extends Controller
         $data['users'] = $ีusers;
         return view('user.index', ['users' => $ีusers]);
     }
+    function login(Request $req){
+        
+    }
     function edit($id){
         $user = User::find($id);
         $data['user'] = $user;
